@@ -46,7 +46,9 @@ public class JiraAPI {
         String issueDetail=given().filter(session).pathParams("key","RSA-5").when().get("/rest/api/2/issue/{key}").then().assertThat().statusCode(200).extract().response().asString();
 
         System.out.println(issueDetail);
-
+        
+        System.out.println("Shruti");
+        System.out.println("Adding new lines");
     }
 
 
